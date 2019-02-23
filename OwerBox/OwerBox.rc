@@ -1,0 +1,272 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\OwerBox.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,0
+ PRODUCTVERSION 2,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "Made By Jelin"
+            VALUE "FileDescription", "MP3播放器子窗口模块"
+            VALUE "FileVersion", "2.0.0"
+            VALUE "InternalName", "CommonDlgLib.dll"
+            VALUE "LegalCopyright", "2013 Jelin。保留所有权利。"
+            VALUE "OriginalFilename", "CommonDlgLib.dll"
+            VALUE "ProductName", "CommonDlgLib"
+            VALUE "ProductVersion", "2.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_DELETE DIALOGEX 0, 0, 191, 105
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "删除"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "取消",IDC_BUTTON2,115,82,68,19
+    PUSHBUTTON      "确定",IDC_BUTTON1,11,82,68,19
+    CONTROL         "同时删除文件",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,64,55,84,16
+    CONTROL         "确定从列表中移除此项吗？",IDC_TTEXT,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,59,19,112,19
+    ICON            "",IDC_IMAGE,21,14,21,20
+END
+
+IDD_DIALOG_INFO DIALOGEX 0, 0, 190, 198
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "歌曲信息："
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    RTEXT           "歌曲名：",IDC_STATIC,0,3,56,18,SS_CENTERIMAGE
+    RTEXT           "音乐家：",IDC_STATIC,0,72,56,18,SS_CENTERIMAGE
+    RTEXT           "文件大小：",IDC_STATIC,0,27,56,18,SS_CENTERIMAGE
+    RTEXT           "专辑名：",IDC_STATIC,0,98,56,18,SS_CENTERIMAGE
+    RTEXT           "发行年代：",IDC_STATIC,0,124,56,18,SS_CENTERIMAGE
+    RTEXT           "曲目号：",IDC_STATIC,0,150,56,18,SS_CENTERIMAGE
+    RTEXT           "流派：",IDC_STATIC,0,176,56,18,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT1,59,5,112,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT2,59,30,112,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT3,59,75,112,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT4,59,100,112,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT5,59,127,112,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT6,59,178,112,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT7,59,153,112,15,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "比特率：",IDC_STATIC,0,50,56,18,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT8,60,52,112,15,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_CHANGECLOTH DIALOGEX 0, 0, 146, 164
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Button1",IDC_BUTTON1,"Button",BS_OWNERDRAW | WS_TABSTOP,35,145,103,10
+    LTEXT           "透明度：",IDC_STATIC,4,150,33,8
+    CONTROL         "Button2",IDC_BUTTON2,"Button",BS_OWNERDRAW | WS_TABSTOP,4,3,22,13
+END
+
+IDD_DIALOG_SETATTRIBUTE DIALOGEX 0, 0, 170, 139
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "属性设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RTEXT           "开机启动：",IDC_STATIC,11,11,59,13
+    CONTROL         "启动",IDC_RUNBOOT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,101,6,61,18
+    GROUPBOX        "声道",IDC_STATIC,15,26,144,47
+    RTEXT           "左声道:",IDC_STATIC,21,38,38,13
+    RTEXT           "右声道:",IDC_STATIC,21,54,38,13
+    CONTROL         "",IDC_LVOICE,"Button",BS_OWNERDRAW | WS_TABSTOP,70,39,83,7
+    CONTROL         "",IDC_RVOICE,"Button",BS_OWNERDRAW | WS_TABSTOP,70,55,83,7
+    RTEXT           "比特率:",IDC_STATIC,16,81,43,11
+    CONTROL         "",IDC_RATIO,"Button",BS_OWNERDRAW | WS_TABSTOP,70,82,83,7
+    RTEXT           "音调:",IDC_STATIC,18,100,41,10
+    CONTROL         "",IDC_PITCH,"Button",BS_OWNERDRAW | WS_TABSTOP,70,100,83,7
+    RTEXT           "播放速度:",IDC_STATIC,7,120,52,14
+    CONTROL         "",IDC_SPEED,"Button",BS_OWNERDRAW | WS_TABSTOP,70,121,83,7
+END
+
+IDD_DIALOG_SHOWLYRIC DIALOGEX 0, 0, 387, 255
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_RICHEDIT21,"RichEdit20W",WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP | 0x8c4,0,1,386,253,WS_EX_ACCEPTFILES
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "res\\6fe7ce79a6071f4628388acb.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_INFO, DIALOG
+    BEGIN
+        RIGHTMARGIN, 176
+    END
+
+    IDD_DIALOG_CHANGECLOTH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 139
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_DIALOG_SHOWLYRIC, DIALOG
+    BEGIN
+        RIGHTMARGIN, 386
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BACK                BITMAP                  "res\\ColorBuble.bmp"
+IDB_BITMAP_ERROR        BITMAP                  "res\\error.bmp"
+IDB_BITMAP_RED          BITMAP                  "res\\bitmap1.bmp"
+IDB_BITMAP_YELLOW       BITMAP                  "res\\bitmap3.bmp"
+IDB_SLIDER              BITMAP                  "res\\bmp00001.bmp"
+IDB_BITMAP_CHANGE1      BITMAP                  "res\\bitmap2.bmp"
+IDB_BITMAP_CHANGE2      BITMAP                  "res\\bitmap.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "RBT"
+    BEGIN
+        MENUITEM "复制",                          ID_MENU_COPY
+        MENUITEM "复制全部",                        ID_MENU_COPYALL
+    END
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\OwerBox.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
