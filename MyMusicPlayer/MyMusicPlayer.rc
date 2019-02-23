@@ -1,0 +1,329 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\MyMusicPlayer.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "res\\1.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 171, 125
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "关于 MyMusicPlayer"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "静态",IDC_ABOUT,0,0,171,125,SS_NOTIFY
+END
+
+IDD_MYMUSICPLAYER_DIALOG DIALOGEX 0, 0, 163, 260
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST | WS_EX_ACCEPTFILES | WS_EX_APPWINDOW
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "Button1",IDC_EXIT,"Button",BS_OWNERDRAW | WS_TABSTOP,145,10,13,9
+    CONTROL         "Button2",IDC_HIDE,"Button",BS_OWNERDRAW | WS_TABSTOP,144,1,10,9
+    CONTROL         "Button3",IDC_MINI,"Button",BS_OWNERDRAW | WS_TABSTOP,131,1,12,11
+    LISTBOX         IDC_LIST1,22,83,95,144,LBS_OWNERDRAWVARIABLE | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,WS_EX_ACCEPTFILES
+    CONTROL         "Button4",IDC_PREV,"Button",BS_OWNERDRAW | WS_TABSTOP,6,1,15,13
+    CONTROL         "Button5",IDC_PLAY,"Button",BS_OWNERDRAW | WS_TABSTOP,31,1,12,13
+    CONTROL         "Button6",IDC_NEXT,"Button",BS_OWNERDRAW | WS_TABSTOP,54,1,13,13
+    CONTROL         "Button7",IDC_BUTTONVOICE,"Button",BS_OWNERDRAW | WS_TABSTOP,12,32,110,10
+    CONTROL         "Button8",IDC_ADD,"Button",BS_OWNERDRAW | WS_TABSTOP,135,246,15,6
+    CONTROL         "Button1",IDC_VOICE,"Button",BS_OWNERDRAW | WS_TABSTOP,70,1,15,12
+    CONTROL         "Button2",IDC_SETVOICE,"Button",BS_OWNERDRAW | WS_TABSTOP,85,7,40,6
+    CONTROL         "Button1",IDC_PLAYMODE,"Button",BS_OWNERDRAW | WS_TABSTOP,139,55,15,8
+    CONTROL         "播放列表",IDC_BUTTON1,"Button",BS_OWNERDRAW | WS_TABSTOP,15,67,32,11
+    PUSHBUTTON      "Button3",IDC_BUTTON3,10,247,47,9
+    CONTROL         "Button2",IDC_BUTTON_CLOTH,"Button",BS_OWNERDRAW | WS_TABSTOP,122,19,17,8
+END
+
+IDD_DIALOG_NOLYRIC DIALOGEX 0, 0, 179, 92
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "歌词不存在"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Button1",IDC_BUTTON1,11,60,159,17
+    LTEXT           "非常抱歉，没有找到歌词文件，您可以点击下面的链接下载最新歌词，然后放到Lyrics文件夹下，程序下次将自动读取。",IDC_STATIC,13,20,150,25
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,0
+ PRODUCTVERSION 2,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "Made By Jelin"
+            VALUE "FileDescription", "MP3播放器应用程序"
+            VALUE "FileVersion", "2.0.0"
+            VALUE "InternalName", "MusicPlayer.exe"
+            VALUE "LegalCopyright", "2013 Jelin。保留所有权利。"
+            VALUE "OriginalFilename", "MusicPlayer.exe"
+            VALUE "ProductName", "Music  Player"
+            VALUE "ProductVersion", "2.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MYMUSICPLAYER_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 158
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 259
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "icon"
+    BEGIN
+        POPUP "播放控制(&C)"
+        BEGIN
+            MENUITEM "暂停      Ctrl+Alt+P",          ID_MENU_PLAY
+            MENUITEM "上一曲   Ctrl+Alt+←",            ID_MENU_PREV
+            MENUITEM "下一曲   Ctrl+Alt+→",            ID_MENU_NEXT
+        END
+        POPUP "播放模式(&M)"
+        BEGIN
+            MENUITEM "单曲播放(&O)",                    ID_MENU_ONLY
+            MENUITEM "顺序播放(&C)",                    ID_MENU_ORDER
+            MENUITEM "随机播放(&R)",                    ID_MENU_RAND
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "属性设置(S)",                     ID_ICON_32786
+        POPUP "添加歌曲(&P)"
+        BEGIN
+            MENUITEM "添加文件(&K)",                    ID_32789
+            MENUITEM "添加文件夹(&F)",                   ID_32788
+        END
+        MENUITEM SEPARATOR
+        POPUP "歌词面板(&Y)"
+        BEGIN
+            MENUITEM "显示歌词  Ctrl+Alt+H",            ID_32791
+            MENUITEM "锁定歌词  Ctrl+Alt+L",            ID_32795
+            MENUITEM "文字颜色(&C)",                    ID_32793
+            MENUITEM "字体(&F)",                      ID_32794
+        END
+        POPUP "小工具(&T)"
+        BEGIN
+            MENUITEM "截屏    Ctrl+Alt+C",            ID_MENU_SCAP
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "关于(&A)",                      ID_ICON_32771
+        MENUITEM "退出(&E)",                      ID_ICON_32772
+    END
+END
+
+IDR_MENU2 MENU 
+BEGIN
+    POPUP "listBox"
+    BEGIN
+        MENUITEM "查看歌词(&L)",                    ID_LISTBOX_32796
+        MENUITEM "歌曲信息(&F)",                    ID_LISTBOX_32773
+        MENUITEM "删除(&D)",                      ID_LISTBOX_32774
+    END
+END
+
+IDR_MENU3 MENU 
+BEGIN
+    POPUP "add"
+    BEGIN
+        MENUITEM "添加文件(&F)",                    ID_ADD_32775
+        MENUITEM "添加文件夹(&F)",                   ID_ADD_32776
+        MENUITEM "清空列表(&M)",                    ID_ADD_32780
+    END
+END
+
+IDR_MENU4 MENU 
+BEGIN
+    POPUP "mode"
+    BEGIN
+        MENUITEM "单曲播放(&O)",                    ID_MODE_32777
+        MENUITEM "顺序播放(&C)",                    ID_MODE_32778
+        MENUITEM "随机播放(&R)",                    ID_MODE_32779
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_NORMAL_NOVOICE      BITMAP                  "res\\复件 no_voice1.bmp"
+IDB_OVER_ADD            BITMAP                  "res\\add2.bmp"
+IDB_NORMAL_ADD          BITMAP                  "res\\bitmap4.bmp"
+IDB_OVER_EXIT           BITMAP                  "res\\bitmap5.bmp"
+IDB_NORMAL_PLAY2        BITMAP                  "res\\bitmap6.bmp"
+IDB_NORMAL_HIDE         BITMAP                  "res\\bmp00002.bmp"
+IDB_OVER_HIDE           BITMAP                  "res\\bmp00003.bmp"
+IDB_NORMAL_PREV         BITMAP                  "res\\bmp00004.bmp"
+IDB_OVER_PREV           BITMAP                  "res\\bmp00005.bmp"
+IDB_NORMAL_PLAY1        BITMAP                  "res\\bmp00006.bmp"
+IDB_NORMAL_NEXT         BITMAP                  "res\\bmp00007.bmp"
+IDB_OVER_NEXT           BITMAP                  "res\\bmp00008.bmp"
+IDB_NORMAL_MINI1        BITMAP                  "res\\bmp00009.bmp"
+IDB_OVER_MINI2          BITMAP                  "res\\bmp00010.bmp"
+IDB_OVER_MINI1          BITMAP                  "res\\bmp00011.bmp"
+IDB_NORMAL_MINI2        BITMAP                  "res\\bmp00012.bmp"
+IDB_OVER_PLAY2          BITMAP                  "res\\bmp00013.bmp"
+IDB_OVER_PLAY1          BITMAP                  "res\\bmp00014.bmp"
+IDB_NORMAL_VOICE        BITMAP                  "res\\bmp00015.bmp"
+IDB_OVER_NOVOICE        BITMAP                  "res\\no_voice1.bmp"
+IDB_OVER_VOICE          BITMAP                  "res\\复件 bmp00015.bmp"
+IDB_ONLY1               BITMAP                  "res\\bmp00016.bmp"
+IDB_ONLY2               BITMAP                  "res\\bmp00017.bmp"
+IDB_ORDER1              BITMAP                  "res\\bmp00018.bmp"
+IDB_ORDER2              BITMAP                  "res\\bmp00019.bmp"
+IDB_RAND1               BITMAP                  "res\\bmp00020.bmp"
+IDB_RAND2               BITMAP                  "res\\bmp00021.bmp"
+IDB_OVER_LIST1          BITMAP                  "res\\bmp00023.bmp"
+IDB_NORMAL_LIST11       BITMAP                  "res\\bmp00024.bmp"
+IDB_SLIDER_VOICE        BITMAP                  "res\\slider_v.bmp"
+IDB_SLIDER_PROGRESS     BITMAP                  "res\\slider_p.bmp"
+IDB_BACK1               BITMAP                  "res\\1.bmp"
+IDB_NORMAL_CLOTH        BITMAP                  "res\\bitmap7.bmp"
+IDB_OVER_CLOTH          BITMAP                  "res\\bmp00022.bmp"
+IDB_NORMAL_EXIT         BITMAP                  "res\\normal_e.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 MyMusicPlayer(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\MyMusicPlayer.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
