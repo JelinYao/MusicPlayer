@@ -1,0 +1,15 @@
+LIBRARY	"CommonFunLib"
+
+EXPORTS
+    ;
+	ReleaseDCHandle
+	ReleaseGDIHandle
+	FormatSystemTimeW
+	GetAppPathW
+	GetAppPathA
+	FillDCRect
+	GetBitmapRect
+	GetDCBackBitmap
+	SaveBitmapA
+	SaveBitmapW
+	CopyBitmap
