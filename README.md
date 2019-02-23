@@ -13,3 +13,5 @@ Windows上的音乐播放器，使用开源libzplay。
     环境：VS2008
     步骤：打开MusicPlayer.sln项目文件编译即可。
     
+
+播放器功能说明博客：https://blog.csdn.net/mfcing/article/details/43112319
